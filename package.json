@@ -1,0 +1,34 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "This is React Series",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anshitamiddha/Namaste-React.git"
+  },
+  "keywords": [
+    "Namaste",
+    "React"
+  ],
+  "author": "Anshita Middha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anshitamiddha/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/Anshitamiddha/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}
