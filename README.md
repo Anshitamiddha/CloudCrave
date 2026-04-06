@@ -35,4 +35,11 @@ import Component from "path";
 export const Component;
 import {Component} from "path";
 
+#React Hooks
+
+(Normal Js uitlities functions - given by facebook developers )
+-useState() - Superpowelful State Varibles in react
+-useEffects()
+-> Whenever a state variable updates, react re-renders the component
+
 

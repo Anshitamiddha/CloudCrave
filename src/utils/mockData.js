@@ -135,7 +135,7 @@ const resList=
     "locality": "Regal Building, Connaught Place",
     "costForTwo": "₹1200 for two",
     "cuisines": ["North Indian", "Mughlai"],
-    "avgRating": 4.0,
+    "avgRating": 3.9,
     "opened": true,
     "badges": { "imageBadges": [] }
   },
@@ -146,7 +146,7 @@ const resList=
     "locality": "Connaught Place",
     "costForTwo": "₹2000 for two",
     "cuisines": ["North Indian", "Continental", "Mexican"],
-    "avgRating": 4.0,
+    "avgRating": 3.8,
     "opened": true,
     "badges": { "imageBadges": [] }
   }
