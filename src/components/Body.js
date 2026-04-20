@@ -1,6 +1,6 @@
 import resList from "../utils/mockData";
 import CardSection from "../CardSection";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const Body = () => {
@@ -159,6 +159,15 @@ const Body = () => {
     "badges": { "imageBadges": [] }
   }
   ]); 
+
+useEffect(()=>{
+  console.log("useEffect called");
+  fetchData();
+}, []);
+
+const fetchData=()=>{
+   const data=fetch();
+}
 
 
   return (

@@ -39,7 +39,14 @@ import {Component} from "path";
 
 (Normal Js uitlities functions - given by facebook developers )
 -useState() - Superpowelful State Varibles in react
--useEffects()
+-useEffects()-will be called after page loads, called after body will render
 -> Whenever a state variable updates, react re-renders the component
+
+
+#Effective Approach we use is:
+
+  1)Load-->2)Render-->3)API call-->4)Re-render
+
+  
 
 
