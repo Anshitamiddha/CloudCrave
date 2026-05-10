@@ -50,3 +50,5 @@ import {Component} from "path";
   
 
 
+Conditional Rendering--> Rendering Shimmering UI before the actual UI response takes time to load
+
