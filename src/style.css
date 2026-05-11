@@ -8,7 +8,7 @@
     height:90px;
 }
 .logo img{
-    width:120px;
+    width:100px;
     object-fit: cover;
     display:block;
     
@@ -99,9 +99,11 @@
 /* rating + cost container */
 .extra {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
     margin-top: 8px;
+    width: 100%;
 }
 
 /* rating */
@@ -111,12 +113,14 @@
     padding: 3px 8px;
     border-radius: 5px;
     font-size: 13px;
+    
 }
 
 /* cost */
 .cost {
     font-size: 13px;
     font-weight: bold;
+    padding-top: 5px;
 }
 .filter-container{
     display: flex;

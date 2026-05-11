@@ -4,184 +4,54 @@ import Shimmer from "./Shimmer";
 
 const mockData = [
   {
-    name: "Chaayos Chai+Snacks=Relax",
-    id: 90566,
-    cloudinaryImageId:
-      "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/2ce18342-6c04-4ebc-9725-788819ddaa56_90566.JPG",
-    locality: "Connaught Place",
-    costForTwo: "₹250 for two",
-    cuisines: [
-      "Beverages",
-      "Chaat",
-      "Snacks",
-      "Bakery",
-      "Street Food",
-      "healthy",
-      "Home Food",
-      "Maharashtrian",
-      "Italian",
-      "Desserts",
-    ],
-    avgRating: 4.7,
-    opened: true,
-    badges: {
-      imageBadges: [{ imageId: "v1695133679/badges/Pure_Veg111.png", description: "pureveg" }],
+    info: {
+      name: "Chaayos Chai+Snacks=Relax",
+      id: 90566,
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/2ce18342-6c04-4ebc-9725-788819ddaa56_90566.JPG",
+      locality: "Connaught Place",
+      costForTwo: "₹250 for two",
+      cuisines: [
+        "Beverages",
+        "Chaat",
+        "Snacks",
+        "Bakery",
+      ],
+      avgRating: 4.7,
     },
   },
+
   {
-    name: "Theobroma",
-    id: 58217,
-    cloudinaryImageId:
-      "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/31/e2c409d5-e7f6-4afd-bc80-3fff1f89f665_58217.JPG",
-    locality: "Mezzanine Connaught",
-    costForTwo: "₹400 for two",
-    cuisines: ["Bakery", "Desserts"],
-    avgRating: 4.6,
-    opened: true,
-    badges: { imageBadges: [{ imageId: "newg.png", description: "Gourmet" }] },
-  },
-  {
-    name: "Starbucks Coffee",
-    id: 104564,
-    cloudinaryImageId:
-      "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/26/366af784-bdbc-4550-939f-c805fabe8484_104564.JPG",
-    locality: "P Block, Connaught Place",
-    costForTwo: "₹500 for two",
-    cuisines: ["Beverages", "Cafe", "Snacks", "Desserts", "Bakery", "Ice Cream"],
-    avgRating: 4.7,
-    opened: true,
-    badges: {
-      imageBadges: [{ imageId: "v1695133679/badges/Pure_Veg111.png", description: "pureveg" }],
+    info: {
+      name: "Theobroma",
+      id: 58217,
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/31/e2c409d5-e7f6-4afd-bc80-3fff1f89f665_58217.JPG",
+      locality: "Connaught Place",
+      costForTwo: "₹400 for two",
+      cuisines: ["Bakery", "Desserts"],
+      avgRating: 4.6,
     },
   },
+
   {
-    name: "Farzi Cafe",
-    id: 39241,
-    cloudinaryImageId:
-      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2024/03/20/QUESABIRRIA_H_f.jpg.rend.hgtvcom.616.462.85.suffix/1711030350776.webp",
-    locality: "Inner Circle, Connaught Place",
-    costForTwo: "₹2500 for two",
-    cuisines: ["Modern Indian", "Tapas"],
-    avgRating: 4.3,
-    opened: true,
-    badges: { imageBadges: [] },
-  },
-  {
-    name: "Daryaganj Restaurant",
-    id: 158464,
-    cloudinaryImageId:
-      "https://www.shutterstock.com/image-photo/various-cold-drinks-on-table-600nw-2703227755.jpg",
-    locality: "Connaught Place",
-    costForTwo: "₹2000 for two",
-    cuisines: ["North Indian", "Mughlai", "Beverages"],
-    avgRating: 4.6,
-    opened: true,
-    badges: { imageBadges: [] },
-  },
-  {
-    name: "A2B - Adyar Ananda Bhavan",
-    id: 1082750,
-    cloudinaryImageId:
-      "RX_THUMBNAIL/IMAGES/VENDOR/2026/1/7/55e1dd55-1375-4a89-9232-d80a77522743_1082750.JPG",
-    locality: "M Block, Connaught Place",
-    costForTwo: "₹1500 for two",
-    cuisines: ["South Indian", "Chaat", "Sweets", "North Indian"],
-    avgRating: 4.4,
-    opened: true,
-    badges: { imageBadges: [] },
-  },
-  {
-    name: "Tamasha",
-    id: 39311,
-    cloudinaryImageId:
-      "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/9/ba3c93cd-2af9-488a-acea-c833fdf5a342_651212.JPG",
-    locality: "KG Marg, Connaught Place",
-    costForTwo: "₹2500 for two",
-    cuisines: ["Continental", "Finger Food"],
-    avgRating: 4.3,
-    opened: true,
-    badges: { imageBadges: [] },
-  },
-  {
-    name: "Dasaprakash",
-    id: 239435,
-    cloudinaryImageId:
-      "RX_THUMBNAIL/IMAGES/VENDOR/2026/1/7/6177ff4a-413b-4ca5-99df-3fb905a8c302_218676.JPG",
-    locality: "Connaught Place",
-    costForTwo: "₹150 for two",
-    cuisines: [
-      "Bakery",
-      "Beverages",
-      "Maharashtrian",
-      "Snacks",
-      "Street Food",
-      "South Indian",
-      "Punjabi",
-      "Chaat",
-      "Indian",
-      "American",
-    ],
-    avgRating: 4.5,
-    opened: true,
-    badges: {
-      imageBadges: [{ imageId: "v1695133679/badges/Pure_Veg111.png", description: "pureveg" }],
+    info: {
+      name: "Burger King",
+      id: 1150282,
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/22/e40f52b6-4046-4ba9-891b-6dd0986dac71_1150282.jpg",
+      locality: "Connaught Place",
+      costForTwo: "₹500 for two",
+      cuisines: ["Burgers", "American"],
+      avgRating: 4.5,
     },
-  },
-  {
-    name: "38 Barracks",
-    id: 39425,
-    cloudinaryImageId:
-      "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1690791785/3a6f2921b60e5763fc3cb2a50c45060a.jpg",
-    locality: "M Block, Connaught Place",
-    costForTwo: "₹2000 for two",
-    cuisines: ["North Indian", "Continental", "Italian"],
-    avgRating: 4.5,
-    opened: true,
-    badges: { imageBadges: [] },
-  },
-  {
-    name: "Burger King",
-    id: 1150282,
-    cloudinaryImageId:
-      "RX_THUMBNAIL/IMAGES/VENDOR/2025/7/22/e40f52b6-4046-4ba9-891b-6dd0986dac71_1150282.jpg",
-    locality: "H Block, Connaught Place",
-    costForTwo: "₹500 for two",
-    cuisines: ["Burgers", "American"],
-    avgRating: 4.5,
-    opened: true,
-    badges: {
-      imageBadges: [{ imageId: "v1695133679/badges/Pure_Veg111.png", description: "pureveg" }],
-    },
-  },
-  {
-    name: "Pind Balluchi",
-    id: 40161,
-    cloudinaryImageId:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5phBOfKzvw2Rr_GL-v4hPfipRJsYpiWn-A&s",
-    locality: "Regal Building, Connaught Place",
-    costForTwo: "₹1200 for two",
-    cuisines: ["North Indian", "Mughlai"],
-    avgRating: 3.9,
-    opened: true,
-    badges: { imageBadges: [] },
-  },
-  {
-    name: "ChefChoice",
-    id: 56641,
-    cloudinaryImageId:
-      "https://www.allrecipes.com/thmb/HTj0WOsbjJar4nB9Ur4YQNmThu8=/1500x2000/filters:no_upscale():max_bytes(150000):strip_icc()/728-Mexican-food-category-header-image-DDMFS-3x1-17595-39cf9720cd504afd8c820ed1b6ebd74e.jpg",
-    locality: "Connaught Place",
-    costForTwo: "₹2000 for two",
-    cuisines: ["North Indian", "Continental", "Mexican"],
-    avgRating: 3.8,
-    opened: true,
-    badges: { imageBadges: [] },
   },
 ];
 
 const Body = () => {
   const [ListOfRes, setNewListofRes] = useState(mockData);
   const [originalList, setOriginalList] = useState(mockData);
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     console.log("useEffect called");
@@ -191,13 +61,17 @@ const Body = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&lat=28.6139&lng=77.2090"
+        "https://corsproxy.io/?" +
+          encodeURIComponent(
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.73390&lng=76.78890&page_type=DESKTOP_WEB_LISTING"
+          )
       );
 
       const json = await response.json();
 
       const apiList =
-        json?.data?.cards[5]?.card?.gridElements?.infoWithStyle?.restaurants || [];
+        json?.data?.cards[1]?.card?.card?.gridElements
+          ?.infoWithStyle?.restaurants || [];
 
       if (apiList.length > 0) {
         setNewListofRes(apiList);
@@ -205,45 +79,68 @@ const Body = () => {
       }
     } catch (error) {
       console.log("API failed, showing mock data");
-      setNewListofRes(mockData);
-      setOriginalList(mockData);
     }
   };
-  //Conditional Rendering
 
-  return ListOfRes.length===0 ? ( <Shimmer/>
-):(  <div className="body">
+  // Conditional Rendering
+  if (ListOfRes.length === 0) {
+    return <Shimmer />;
+  }
 
-  <div className="filter-container">
+  return (
+    <div className="body">
+      <div className="filter-container">
 
-    <div className="Search">
-      <input type="text" className="search-box" />
+        <div className="Search">
+          <input
+            type="text"
+            className="search-box"
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+          />
 
-      <button className="search-btn">
-        Search
-      </button>
-    </div>
+          <button
+            className="search-btn"
+            onClick={() => {
+              const filteredSearch = originalList.filter((res) =>
+                res.info?.name
+                  ?.toLowerCase()
+                  .includes(searchText.toLowerCase())
+              );
 
-    <div className="filter">
-      <button
-        className="filter-btn"
-        onClick={() => {
-          const filteredList = originalList.filter(
-            (res) => res.info?.avgRating > 4 || res.avgRating > 4
-          );
-          setNewListofRes(filteredList);
-        }}
-      >
-        Top Rated Restaurant
-      </button>
-    </div>
+              setNewListofRes(filteredSearch);
+            }}
+          >
+            Search
+          </button>
+        </div>
 
-  </div>
+        <div className="filter">
+          <button
+            className="filter-btn"
+            onClick={() => {
+              const filteredList = originalList.filter(
+                (res) => res.info?.avgRating > 4
+              );
+
+              setNewListofRes(filteredList);
+            }}
+          >
+            Top Rated Restaurant
+          </button>
+        </div>
+
+      </div>
 
       <div className="cards-container">
         {ListOfRes.map((res) => (
-          <div className="res-container" key={res.info?.id || res.id}>
-            <CardSection resdata={res.info || res} />
+          <div
+            className="res-container"
+            key={res.info?.id}
+          >
+            <CardSection resdata={res.info} />
           </div>
         ))}
       </div>

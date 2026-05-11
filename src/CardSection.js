@@ -1,37 +1,61 @@
-// 🔥 helper function (add here)
+// 🔥 helper function
 const getImage = (img) => {
   if (!img) return "https://via.placeholder.com/200";
+
   if (img.startsWith("http")) return img;
 
-  return "https://media-assets.swiggy.com/swiggy/image/upload/" + img;
+  return (
+    "https://media-assets.swiggy.com/swiggy/image/upload/" + img
+  );
 };
 
 const CardSection = ({ resdata }) => {
   if (!resdata) return null;
-  
+
+  const {
+    name,
+    cuisines,
+    locality,
+    avgRating,
+    costForTwo,
+    cloudinaryImageId,
+  } = resdata;
+
   return (
     <div className="card">
       <img
-     className="card-img"
-     src={getImage(resdata.cloudinaryImageId)}
-     alt={resdata.name}
-     onError={(e) => {
-      e.target.src = "https://via.placeholder.com/200";
-  }}
-    />
+        className="card-img"
+        src={getImage(cloudinaryImageId)}
+        alt={name}
+        onError={(e) => {
+          e.target.src =
+            "https://via.placeholder.com/200";
+        }}
+      />
 
       <div className="details">
-        <h3 className="res-name">{resdata.name}</h3>
-        <h4 className="res-cuisine">{resdata.cuisines?.join(", ")}</h4>
-        <h4 className="res-location">{resdata.locality}</h4>
+        <h3 className="res-name">{name}</h3>
+
+        <h4 className="res-cuisine">
+          {cuisines?.join(", ")}
+        </h4>
+
+        <h4 className="res-location">
+          {locality}
+        </h4>
 
         <div className="extra">
-          <span className="rating">{resdata.avgRating} ⭐</span>
-          <span className="cost">{resdata.costForTwo}</span>
+          <span className="rating">
+            {avgRating} ⭐
+          </span>
+
+          <span className="cost">
+            {costForTwo}
+          </span>
         </div>
       </div>
     </div>
   );
 };
 
-export  default CardSection;
+export default CardSection;
