@@ -26,7 +26,7 @@ import ErrorComponent from "./components/ErrorComponent";
     return(
         <div className="app">
             <Header/>
-            <Body/>
+            <Outlet/>
 
         </div>
 
@@ -38,17 +38,21 @@ import ErrorComponent from "./components/ErrorComponent";
     {
         path:"/",
         element:<AppLayout/>,
-        errorElement:<ErrorComponent/>,
-    },
-    {
+        children:[
+        {
         path:"/about",
         element:<About/> ,
 
-    },
-    {
+        },
+        {
         path:"/contact",
         element:<Contact/>,
-    }
+       }
+
+        ],
+        errorElement:<ErrorComponent/>,
+    },
+    
  ]);
 
  const root=ReactDOM.createRoot(document.getElementById("root"));
