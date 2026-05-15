@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import "./RestaurantMenu.css";
 
 const RestaurantMenu = () => {
     const [resInfo, setResInfo] = useState(null);
@@ -44,28 +45,50 @@ const RestaurantMenu = () => {
     } = info;
 
     return (
-        <div className="menu">
-            <h1>{name}</h1>
+  <div className="menu">
 
-            <p>{cuisines.join(", ")}</p>
+    <div className="restaurant-info">
 
-            <p>{avgRatingString}</p>
+      <h1 className="restaurant-name">
+        {name}
+      </h1>
 
-            <h3>{costForTwoMessage}</h3>
+      <p className="cuisines">
+        {cuisines?.join(", ")}
+      </p>
 
-            <h3>{areaName}</h3>
-            <h2>Menu</h2>
+      <div className="meta-row">
+        <span className="rating">⭐ {avgRatingString}</span>
+        <span className="dot">•</span>
+        <span className="price">{costForTwoMessage}</span>
+      </div>
 
-            <ul>
-              {itemCards.map((item) => (
-  <li key={item.card.info.id}>
-    {item.card.info.name}
-  </li>
-))}
-              
-            </ul>
-        </div>
-    );
+      <p className="location">
+        {areaName}
+      </p>
+
+    </div>
+
+    <h2 className="menu-title">Menu</h2>
+
+    <ul className="menu-list">
+      {itemCards.map((item) => (
+        <li key={item.card.info.id} className="menu-item">
+
+          <div className="item-name">
+            {item.card.info.name}
+          </div>
+
+          <div className="item-price">
+            ₹{(item.card.info.price || item.card.info.defaultPrice) / 100}
+          </div>
+
+        </li>
+      ))}
+    </ul>
+
+  </div>
+);
 };
 
 export default RestaurantMenu;
