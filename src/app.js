@@ -53,9 +53,9 @@ import RestaurantMenu from "./components/RestaurantMenu";
     element: <Contact />
   },
  {
-  path: "restaurants/:resId",
-  element: <RestaurantMenu />
-}
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />,
+      },
 ],
         errorElement:<ErrorComponent/>,
     },
