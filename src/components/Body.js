@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import CardSection from "../CardSection";
 import Shimmer from "./Shimmer";
+import { BrowserRouter } from "react-router-dom";
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 const mockData = [
   {
     info: {

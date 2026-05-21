@@ -105,14 +105,19 @@ const Body = () => {
           <button
             className="search-btn"
             onClick={() => {
-              const filteredSearch = originalList.filter((res) =>
-                res.info?.name
-                  ?.toLowerCase()
-                  .includes(searchText.toLowerCase())
-              );
+  if (searchText === "") {
+    setListOfRes(originalList);
+    return;
+  }
 
-              setNewListofRes(filteredSearch);
-            }}
+  const filteredSearch = originalList.filter((res) =>
+    res.info?.name
+      ?.toLowerCase()
+      .includes(searchText.toLowerCase())
+  );
+
+  setListOfRes(filteredSearch);
+}}
           >
             Search
           </button>
