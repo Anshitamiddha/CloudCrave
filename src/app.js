@@ -45,15 +45,15 @@ import RestaurantMenu from "./components/RestaurantMenu";
     element: <Body />
   },
   {
-    path: "about",
+    path: "/about",
     element: <About />
   },
   {
-    path: "contact",
+    path: "/contact",
     element: <Contact />
   },
  {
-        path: "restaurants/:resId",
+        path: "/restaurants/:resId",
         element: <RestaurantMenu />,
       },
 ],

@@ -1,14 +1,16 @@
-import User from "./User";
 import UserClass from "./UserClass";
 
-const About=()=>{
-    return(
-        <div>
-            <h1>About</h1>
-            <h2>This is About section of CraveCloud</h2>
-            <  User/>
-            <UserClass/>
-        </div>
-    );
+const About = () => {
+  return (
+    <div>
+      <h1>About</h1>
+
+      <UserClass
+        name={"Ananya Pandey"}
+        location={"Delhi"}
+      />
+    </div>
+  );
 };
+
 export default About;
