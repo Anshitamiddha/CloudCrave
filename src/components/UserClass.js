@@ -2,30 +2,23 @@ import React from "react";
 class UserClass extends React.Component{
     constructor(props){
         super(props);
-        console.log(props);
-
-        this.state={
-            count : 0,
-        };
+        this.state={};
+        console.log(this.props.name + "Child Constructor");
+    }
+    async conponentDidMount(){
+        const data= await  fetch("https://api.github.com/users/anshitamiddha");
+        const json= await data.json();
+        console.log(json);
+       // console.log(this.props.name + "Child ComponentDidMount");
     }
    render(){
 
         const {name, location} = this.props;
-        const {count} = this.state;
+       
+
     return(
-        <div className="user-card">
-            <h1> Count: {count} </h1>
-            <button
-             onClick={()=>{
-                //Never Update ur state variable directly
-                this.setState({
-                    count:this.state.count+1,
-                })
-             }}
-            
-            >
-                Increase Count
-            </button>
+
+        <div className="user-card">            
         <h2>Name:{name}</h2>
         <h3> Location: {location} </h3>
 
@@ -35,5 +28,21 @@ class UserClass extends React.Component{
 };
 
 export default UserClass;
-                                                                            
-                                                                       
+                                                                        
+/*
+-Parent Constructor
+-Parent Render
+  
+  - FirstChild Constructor
+  -FirstChild Render
+
+  -SecondChild COnstructor
+  -SecondChild Render
+  
+  <DOM-UPDATED-in single batch>(child1+child2)
+  -First ComponentDidMount
+  -Second ComponentDidMount
+
+-Parent ComponentDidMount
+
+*/
